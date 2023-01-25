@@ -40,16 +40,13 @@ export default function Navbar() {
              </NavLink>
            </li>
            <li className="nav-item ">
-           <NavDropdown title="Demande" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/student/create">Salle Sport</NavDropdown.Item>
-              <NavDropdown.Item href="/student/create">Terrain </NavDropdown.Item>
-              <NavDropdown.Item href="/student/create">Bibliothèque</NavDropdown.Item>
-              <NavDropdown.Item href="/student/create">Computer</NavDropdown.Item>
-            </NavDropdown>
+             <NavLink className="nav-link" to="/student/create">
+                Liste Demandes
+             </NavLink>
            </li>
            <li className="nav-item ">
              <NavLink className="nav-link" to="/student/record">
-                Liste Demandes
+                Demander
              </NavLink>
            </li>
            <li className="nav-item ">
