@@ -41,10 +41,10 @@ export default function Navbar() {
            </li>
            <li className="nav-item ">
            <NavDropdown title="Demande" id="basic-nav-dropdown">
-              <NavDropdown.Item href="student/create">Salle Sport</NavDropdown.Item>
-              <NavDropdown.Item href="student/create">Terrain </NavDropdown.Item>
-              <NavDropdown.Item href="student/create">Bibliothèque</NavDropdown.Item>
-              <NavDropdown.Item href="student/create">Computer</NavDropdown.Item>
+              <NavDropdown.Item href="/student/create">Salle Sport</NavDropdown.Item>
+              <NavDropdown.Item href="/student/create">Terrain </NavDropdown.Item>
+              <NavDropdown.Item href="/student/create">Bibliothèque</NavDropdown.Item>
+              <NavDropdown.Item href="/student/create">Computer</NavDropdown.Item>
             </NavDropdown>
            </li>
            <li className="nav-item ">
