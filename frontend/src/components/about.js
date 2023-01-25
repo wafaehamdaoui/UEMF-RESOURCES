@@ -20,7 +20,7 @@ function About() {
       </div>
       <div>
       <h3 style={{marginLeft:"42%", marginTop:"3%"}}>  Contacter Nous</h3>
-      <Button href="https://www.linkedin.com/company/uemf" className="mr-2" style={{marginLeft:"32%"}}>
+      <Button href="https://ma.linkedin.com/school/universit%C3%A9-euro-m%C3%A9diterran%C3%A9enne-de-f%C3%A8s/" className="mr-2" style={{marginLeft:"32%"}}>
         <i className="fab fa-twitter"></i> Follow on Linkedin
       </Button>
       <Button href="https://www.facebook.com/UniversiteEuromed/" className="mr-2">
