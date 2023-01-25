@@ -41,12 +41,12 @@ export default function Navbar() {
            </li>
            <li className="nav-item ">
              <NavLink className="nav-link" to="/student/create">
-                Liste Demandes
+             Demander
              </NavLink>
            </li>
            <li className="nav-item ">
              <NavLink className="nav-link" to="/student/record">
-                Demander
+             Liste Demandes
              </NavLink>
            </li>
            <li className="nav-item ">
