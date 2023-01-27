@@ -10,8 +10,8 @@ function Home() {
           alt="First slide"
         />
         <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
-        <h2>UEMF Resources</h2>
-          <p style={{fontSize:"30px"}}>Est un système de réservation des ressources d'université</p>
+          <h2>UEMF Resources</h2>
+          <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -22,8 +22,8 @@ function Home() {
         />
         
         <Carousel.Caption>
-        <h5>UEMF Resources</h5>
-          <p>Est un système de réservation des ressources d'université</p>
+          <h2>UEMF Resources</h2>
+          <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,8 +33,8 @@ function Home() {
           alt="Third slide"
         />
         <Carousel.Caption>
-        <h5>UEMF Resources</h5>
-          <p>Est un système de réservation des ressources d'université</p>
+        <h2>UEMF Resources</h2>
+          <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,8 +44,8 @@ function Home() {
           alt="fourist slide"
         />
         <Carousel.Caption>
-        <h5>UEMF Resources</h5>
-          <p>Est un système de réservation des ressources d'université</p>
+        <h2>UEMF Resources</h2>
+          <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -55,8 +55,8 @@ function Home() {
           alt="Five slide"
         />
         <Carousel.Caption>
-          <h5>UEMF Resources</h5>
-          <p>Est un système de réservation des ressources d'université</p>
+        <h2>UEMF Resources</h2>
+          <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
