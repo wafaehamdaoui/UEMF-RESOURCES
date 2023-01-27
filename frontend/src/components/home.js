@@ -9,7 +9,7 @@ function Home() {
           src="ress2.jfif"
           alt="First slide"
         />
-        <Carousel.Caption style={{backgroundColor:"darkgrey"}}>
+        <Carousel.Caption style={{backgroundColor:"Highlight"}}>
         <h5>UEMF Resources</h5>
           <p>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
