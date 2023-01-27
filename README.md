@@ -54,15 +54,23 @@ This interface allows you to enter:
 If the authentication is done correctly, the application opens on the main window.
 
 ### If we log in as a simple user(student):
-`Home interface:`![image](https://user-images.githubusercontent.com/75392302/215223192-3df435fc-d67d-4e9f-88af-97928dd1664c.png)
+*`Home interface:`![image](https://user-images.githubusercontent.com/75392302/215223192-3df435fc-d67d-4e9f-88af-97928dd1664c.png)
 
 In this interface we find the header (the logo and menu) in the body we find the list of images of resources.
-`Interface demander:` By clicking on Demander, you will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png)
-if we click on create demande we will be redirected to the request list
-`Interface liste:` By clicking on Demander, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
-As we can see we have the rigth to modify or delete a request
+
+* `Interface demander:` By clicking on Demander, you will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png) if we click on create the server will chek if a request with the same date and duration for the same resource the creation will rejected if not the request will be ceated successfully and we will be redirected to the request list.
+
+* `Interface liste:` By clicking on Demander, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
+As we can see we have the rigth to modify or cancel a request.
+
 1. Modify request: By clicking on editer, we will be redirected to the request modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215225126-d6fc2bad-ef9f-4acc-a44a-e410f8f96a11.png)
-and if we click on effectuer modification the system will check if a request with the same date and duration for thesame resource the modification will rejected if not the modification will done successfully
+and if we click on effectuer modification the system will check if a request with the same date and duration for the same resource the modification will rejected if not the modification will be done successfully.
+
+2. Cancel request:  By clicking on cancel the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215226213-19c9b665-f57b-4392-9345-986a700682f9.png).
+
+* `About Interface:`![image](https://user-images.githubusercontent.com/75392302/215226486-1277eb48-75e5-4e67-9e65-f4e725789c69.png).
+* To logout we click on `déconnecter`
+
 
 
 
