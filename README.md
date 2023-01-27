@@ -51,10 +51,11 @@ User can authenticate with his login and password to take advantage of the appli
 This interface allows you to enter:
 - The username
 - The user's password
+
 If the authentication is done correctly, the application opens on the main window.
 
 ### If we log in as a simple user(student):
-*`Home interface:`![image](https://user-images.githubusercontent.com/75392302/215223192-3df435fc-d67d-4e9f-88af-97928dd1664c.png)
+* `Principale interface:`![Uploading image.png…]()
 
 In this interface we find the header (the logo and menu) in the body we find the list of images of resources.
 
@@ -69,6 +70,7 @@ and if we click on effectuer modification the system will check if a request wit
 2. Cancel request:  By clicking on cancel the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215226213-19c9b665-f57b-4392-9345-986a700682f9.png).
 
 * `About Interface:`![image](https://user-images.githubusercontent.com/75392302/215226486-1277eb48-75e5-4e67-9e65-f4e725789c69.png).
+
 * To logout we click on `déconnecter`
 
 
