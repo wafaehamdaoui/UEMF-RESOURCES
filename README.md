@@ -55,7 +55,8 @@ This interface allows you to enter:
 If the authentication is done correctly, the application opens on the main window.
 
 ### If we log in as a simple user(student):
-* `Principale interface:`![Uploading image.png…]()
+* `Principale interface:`![image](https://user-images.githubusercontent.com/75392302/215227276-82a1aeef-39b8-435d-8930-9237c006d49a.png)
+
 
 In this interface we find the header (the logo and menu) in the body we find the list of images of resources.
 
@@ -64,10 +65,12 @@ In this interface we find the header (the logo and menu) in the body we find the
 * `Interface liste:` By clicking on Demander, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
 As we can see we have the rigth to modify or cancel a request.
 
-1. Modify request: By clicking on editer, we will be redirected to the request modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215225126-d6fc2bad-ef9f-4acc-a44a-e410f8f96a11.png)
+1. Modify request: 
+By clicking on editer, we will be redirected to the request modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215225126-d6fc2bad-ef9f-4acc-a44a-e410f8f96a11.png)
 and if we click on effectuer modification the system will check if a request with the same date and duration for the same resource the modification will rejected if not the modification will be done successfully.
 
-2. Cancel request:  By clicking on cancel the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215226213-19c9b665-f57b-4392-9345-986a700682f9.png).
+2. Cancel request:  
+By clicking on cancel the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215226213-19c9b665-f57b-4392-9345-986a700682f9.png).
 
 * `About Interface:`![image](https://user-images.githubusercontent.com/75392302/215226486-1277eb48-75e5-4e67-9e65-f4e725789c69.png).
 
