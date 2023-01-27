@@ -10,8 +10,8 @@ function Home() {
           alt="First slide"
         />
         <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
-        <h5>UEMF Resources</h5>
-          <p>Est un système de réservation des ressources d'université</p>
+        <h4>UEMF Resources</h4>
+          <p style={{fontSize:"10px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
