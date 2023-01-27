@@ -11,7 +11,7 @@ function Home() {
         />
         <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
         <h2>UEMF Resources</h2>
-          <p style={{fontSize:"60px"}}>Est un système de réservation des ressources d'université</p>
+          <p style={{fontSize:"30px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
