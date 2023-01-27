@@ -12,8 +12,8 @@ function About() {
       <Image src='back3.jpg' className='img-fluid' style={{width:"33.33%" }} alt='s' />
       <Image src='back4.jpg' className='img-fluid' style={{width:"33.33%" }} alt='s' />
       <Image src='terr.jpg' className='img-fluid' style={{width:"33.33%" }} alt='s' />
-      <div className='mask' style={{ backgroundColor: 'hsl(10, 3%, 45%)'}}>
-        <div className='d-flex justify-content-center align-items-center h-100' >
+      <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)'}}>
+        <div className='d-flex justify-content-center align-items-center h-100'>
           <p className='text-white mb-0'>L’UEMF met à la disposition de ses étudiants et 
           de son personnel une infrastructure sur campus qui permet de développer leurs capacités</p>
         </div>
