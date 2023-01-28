@@ -170,6 +170,11 @@ recordRoutes.route("/register").post(isLoggedIn,function (req, response) {
 recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
  let db_connect = dbo.getDb();
  let myquery = { _id: ObjectId(req.params.id) };
+ let Id = {
+  $ne:{
+    _id: ObjectId(req.params.id)
+  }
+ }
  let newvalues = {
    $set: {
     ressource: req.body.ressource,
@@ -180,7 +185,7 @@ recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
  };
  db_connect
    .collection("demandes")
-   .findOne({_id:{$ne:myquery},ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
+   .findOne({_id:Id,ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
      if (demande){
       return response.status(400).json({error:"Modification échouée! essayez avec d'autres durées ou dates "})
      }else{
