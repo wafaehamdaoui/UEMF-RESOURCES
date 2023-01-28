@@ -24,7 +24,7 @@ export default function Register() {
 	  // When a post request is sent to the create url, we'll add a new record to the database.
 	  const newUser = { ...form };
 	    try{
-	    const res = await fetch("https://uemf-ressource-api-2vgg.onrender.com/register", {
+	    const res = await fetch("http://localhost:5000/register", {
 		method: "POST",
 		headers: {
 		  "Content-Type": "application/json",
