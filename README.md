@@ -41,11 +41,11 @@ Our work should achieve the following objectives:
 #### Database:
 IN this project I created two schema or two models :
 
-- *User*: it represent users of my app ![image](https://user-images.githubusercontent.com/75392302/210186881-839095fb-da44-4296-a163-e37e8001a807.png)
-there is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
+- *User*: it represent users of my app ![image](https://user-images.githubusercontent.com/75392302/215274710-d981f05d-a3d2-412e-8002-f1f046ea873c.png)
 
-- *Demande*: which represent reservation request that users do.![image](https://user-images.githubusercontent.com/75392302/210186870-e8e26228-3c62-4dc8-b6f0-588ddffed28e.png)
+- There is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
 
+- *Demande*: which represent reservation request that users do.![image](https://user-images.githubusercontent.com/75392302/215274669-0b944786-8d56-4228-a566-7a5714403e04.png)
 #### User Interface:
 UEMF resources is an application, which will be used by university students most of the time, so the application requires a graphics engine powerful front-end.
 * Login page:![image](https://user-images.githubusercontent.com/75392302/215200517-ff939411-1cf7-4adb-b97f-0f2e5611c1da.png)
