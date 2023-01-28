@@ -79,9 +79,9 @@ export default function RecordList() {
     method: "POST"
   });
   window.location.reload()
-  alert("Email sent to !!")
+  //alert("Email sent to !!")
   window.location.reload()
-  
+
 }
 // This method will reject a record
 async function rejectRecord(id) {
@@ -89,7 +89,7 @@ async function rejectRecord(id) {
     method: "POST"
   });
   window.location.reload()
-  alert("Email sent to !!")
+  //alert("Email sent to !!")
   window.location.reload()
 }
  // This method will map out the records on the table
