@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 // Here, we display our Navbar
 export default function Navbar2() {
   async function handleLogout() {
-    await fetch(`http://localhost:5000/logout`, {
+    await fetch(`https://uemf-ressource-api-2vgg.onrender.com/logout`, {
       method: "post"
     });
   }

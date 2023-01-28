@@ -46,7 +46,7 @@ export default function RecordList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getRecords() {
-     const response = await fetch(`http://localhost:5000/record/`);
+     const response = await fetch(`https://uemf-ressource-api-2vgg.onrender.com/record/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -66,7 +66,7 @@ export default function RecordList() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch(`http://localhost:5000/${id}`, {
+   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/${id}`, {
      method: "DELETE"
    });
    alert("Demande suprimée")
@@ -75,7 +75,7 @@ export default function RecordList() {
  }
  // This method will validare a record
  async function validateRecord(id) {
-  await fetch(`http://localhost:5000/validate/${id}`, {
+  await fetch(`https://uemf-ressource-api-2vgg.onrender.com/validate/${id}`, {
     method: "POST"
   });
   window.location.reload()
@@ -85,7 +85,7 @@ export default function RecordList() {
 }
 // This method will reject a record
 async function rejectRecord(id) {
-  await fetch(`http://localhost:5000/reject/${id}`, {
+  await fetch(`https://uemf-ressource-api-2vgg.onrender.com/reject/${id}`, {
     method: "POST"
   });
   window.location.reload()
