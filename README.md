@@ -105,15 +105,18 @@ By defaut status of a request is "En Attente".
 By clicking on Valider the status of the request will change and be "Validée":![image](https://user-images.githubusercontent.com/75392302/215272602-c213c9a9-cb40-45cc-b28a-4c188a33381a.png)
 
 and the server will send an email of confirmation to the student has done this request like following :![image](https://user-images.githubusercontent.com/75392302/215272439-73533f7e-66df-4885-b708-824bea85e1a6.png)
+
 ![1674915648619](https://user-images.githubusercontent.com/75392302/215274430-d115eb47-15ba-43bd-bf22-e89fee1570a8.jpg)
 ![1674915904397](https://user-images.githubusercontent.com/75392302/215274450-99db807e-7f42-48b0-abe9-ef354fb2d9f3.jpg)
 
 2. Reject request: 
 
 By clicking on Rejeter the status of the request will change and be "Rejetée":
-![1674915904397](https://user-images.githubusercontent.com/75392302/215274193-57eb744c-acea-4f42-9782-c59a978e24d9.jpg)
+![image](https://user-images.githubusercontent.com/75392302/215274910-57b6dce4-4008-47f7-ae87-145edf2a97e4.png)
 
-and the server will send an email of rejection to the student has done this request like following:![image](https://user-images.githubusercontent.com/75392302/215271947-170a9ce4-c526-4986-a2af-54eeffe718c8.png)
+and the server will send an email of rejection to the student has done this request like following:                                    
+
+![1674915904397](https://user-images.githubusercontent.com/75392302/215274193-57eb744c-acea-4f42-9782-c59a978e24d9.jpg)
 
 3. Delete request:  
 By clicking on Supprimer the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215272771-458cd6c2-9a0d-4a4f-9b8d-8bd87fde3adc.png)
