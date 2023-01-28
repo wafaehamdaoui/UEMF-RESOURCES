@@ -180,8 +180,8 @@ recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
  };
  db_connect
    .collection("demandes")
-   .find({ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
-     if (demande.length >1){
+   .find({_id:{$ne:req.params.id},ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
+     if (demande){
       return response.status(400).json({error:"Modification échouée! essayez avec d'autres durées ou dates "})
      }else{
       db_connect
