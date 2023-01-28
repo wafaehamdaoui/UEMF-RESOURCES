@@ -109,7 +109,7 @@ async function rejectRecord(id) {
  // This following section will display the table with the records of individuals.
  return (
    <div>
-     <h3 style={{marginTop:"1.5%" , marginLeft:"37.5%"}}>Liste des Demandes
+     <h3 style={{marginTop:"1.5%" , marginLeft:"37%"}}>Liste des Demandes
      </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
