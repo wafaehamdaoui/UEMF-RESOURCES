@@ -80,7 +80,7 @@ export default function RecordList() {
   });
   window.location.reload()
   alert("Email sent to !!")
-  navigate("/admin/record");
+  window.location.reload()
   
 }
 // This method will reject a record
@@ -90,7 +90,7 @@ async function rejectRecord(id) {
   });
   window.location.reload()
   alert("Email sent to !!")
-  navigate("/admin/record");
+  window.location.reload()
 }
  // This method will map out the records on the table
  function recordList() {
