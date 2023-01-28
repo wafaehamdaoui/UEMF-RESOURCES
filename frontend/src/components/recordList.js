@@ -79,6 +79,7 @@ export default function RecordList() {
     method: "POST"
   });
   alert("Email sent to !!")
+  //window.location.reload(true)  I tried this method by it give me a not found page that why i tried double navigate
   navigate("/admin")
   navigate("/admin/record")
 }
