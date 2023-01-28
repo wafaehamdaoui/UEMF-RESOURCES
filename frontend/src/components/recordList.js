@@ -112,7 +112,7 @@ async function rejectRecord(id) {
  return (
    <div>
      <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Liste des Demandes
-     <Button style={{marginLeft:"48%", backgroundColor:"green"}} onClick={navigate("/admin")}>Retourne à l'Acceuil</Button>
+     <Button style={{marginLeft:"48%", backgroundColor:"green"}} onChange={navigate("/admin")}>Retourne à l'Acceuil</Button>
      </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
