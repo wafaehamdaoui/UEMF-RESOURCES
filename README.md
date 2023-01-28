@@ -40,13 +40,16 @@ Our work should achieve the following objectives:
 
 #### Database:
 IN this project I created two schema or two models :
+
 - *User*: it represent users of my app ![image](https://user-images.githubusercontent.com/75392302/210186881-839095fb-da44-4296-a163-e37e8001a807.png)
 there is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
+
 - *Demande*: which represent reservation request that users do.![image](https://user-images.githubusercontent.com/75392302/210186870-e8e26228-3c62-4dc8-b6f0-588ddffed28e.png)
 
 #### User Interface:
 UEMF resources is an application, which will be used by university students most of the time, so the application requires a graphics engine powerful front-end.
 * Login page:![image](https://user-images.githubusercontent.com/75392302/215200517-ff939411-1cf7-4adb-b97f-0f2e5611c1da.png)
+
 User can authenticate with his login and password to take advantage of the application's features.
 This interface allows you to enter:
 - The username
@@ -59,12 +62,18 @@ If the authentication is done correctly, the application opens on the main windo
 
 In this interface we find the header (the logo and menu) in the body we find the list of images of resources.
 
-* `Interface demander:` By clicking on Demander, we will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png) if we click on create the server will chek if a request with the same date and duration for the same resource the creation will rejected if not the request will be ceated successfully and we will be redirected to the request list.
+* `Interface demander:` 
+By clicking on Demander, we will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png) 
 
-* `Interface Mes Demandes :` By clicking on Demandes list, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
+if we click on create the server will chek if a request with the same date and duration for the same resource the creation will rejected if not the request will be ceated successfully and we will be redirected to the request list.
+
+* `Interface Mes Demandes :`
+By clicking on Demandes list, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
+ 
 As we can see we have the rigth to modify or cancel a request.
 
 1. Modify request: 
+
 By clicking on editer, we will be redirected to the request modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215225126-d6fc2bad-ef9f-4acc-a44a-e410f8f96a11.png)
 and if we click on effectuer modification the system will check if a request with the same date and duration for the same resource the modification will rejected if not the modification will be done successfully.
 
@@ -77,33 +86,40 @@ By clicking on cancel the request will disappeared from the list and it will be 
 
 ### If we log in as an admin :
 
-* `Principale interface:`![image](https://user-images.githubusercontent.com/75392302/215272314-6cd3da00-4b9b-416f-8e3b-b8810cd30545.png)
+* `Principale interface:`
+![image](https://user-images.githubusercontent.com/75392302/215272314-6cd3da00-4b9b-416f-8e3b-b8810cd30545.png)
 
-* `Interface Créer utilisateur:` By clicking on Créer utilisateur, we will be redirected to the adding user page as follows:![image](https://user-images.githubusercontent.com/75392302/215273817-f7370e07-fad6-4eed-b0c4-95113f9e0dad.png)
+* `Interface Créer utilisateur:` 
+By clicking on Créer utilisateur, we will be redirected to the adding user page as follows:![image](https://user-images.githubusercontent.com/75392302/215273817-f7370e07-fad6-4eed-b0c4-95113f9e0dad.png)
 
 if we click on create the server will chek if a user with the same information exist in the database, if yes the creation will rejected if not the user will be added successfully and we will be redirected to the users list.
 
-* `Interface Demandes list:` By clicking on Liste Demandes, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272379-7ca043aa-2aaa-4b8f-a588-5f788aade0eb.png)
+* `Interface Demandes list:` 
+By clicking on Liste Demandes, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272379-7ca043aa-2aaa-4b8f-a588-5f788aade0eb.png)
 
 As we can see we have the rigth to Validate or Reject or Deleete a request.
 By defaut status of a request is "En Attente".
 
 1. Validate request: 
+
 By clicking on Valider the status of the request will change and be "Validée":![image](https://user-images.githubusercontent.com/75392302/215272602-c213c9a9-cb40-45cc-b28a-4c188a33381a.png)
 
 and the server will send an email of confirmation to the student has done this request like following :![image](https://user-images.githubusercontent.com/75392302/215272439-73533f7e-66df-4885-b708-824bea85e1a6.png)
-![image](https://user-images.githubusercontent.com/75392302/215271966-631cfd6c-fbe6-49ef-841b-c7b84ec4eeee.png)
-![image](https://user-images.githubusercontent.com/75392302/215271984-8c9fb1e6-8801-43ab-b74b-8d54aba943aa.png)
+![1674915648619](https://user-images.githubusercontent.com/75392302/215274430-d115eb47-15ba-43bd-bf22-e89fee1570a8.jpg)
+![1674915904397](https://user-images.githubusercontent.com/75392302/215274450-99db807e-7f42-48b0-abe9-ef354fb2d9f3.jpg)
 
 2. Reject request: 
-By clicking on Rejeter the status of the request will change and be "Rejetée":![image](https://user-images.githubusercontent.com/75392302/215272723-976aa85b-df45-4230-ab40-50a8341139ba.png)
+
+By clicking on Rejeter the status of the request will change and be "Rejetée":
+![1674915904397](https://user-images.githubusercontent.com/75392302/215274193-57eb744c-acea-4f42-9782-c59a978e24d9.jpg)
 
 and the server will send an email of rejection to the student has done this request like following:![image](https://user-images.githubusercontent.com/75392302/215271947-170a9ce4-c526-4986-a2af-54eeffe718c8.png)
 
 3. Delete request:  
 By clicking on Supprimer the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215272771-458cd6c2-9a0d-4a4f-9b8d-8bd87fde3adc.png)
 
-* `Interface Users list:` By clicking on Liste Utilisateurs, we will be redirected to the users list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272927-67dcd086-6879-4f7f-85b5-1620dfcbdc26.png)
+* `Interface Users list:` 
+By clicking on Liste Utilisateurs, we will be redirected to the users list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272927-67dcd086-6879-4f7f-85b5-1620dfcbdc26.png)
 
 As we can see we have the rigth to Modify or Delete or user.
 
