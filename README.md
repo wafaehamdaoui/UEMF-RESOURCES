@@ -157,13 +157,23 @@ Currently my application allows me to :
 So My web application in a CRUD app par excellence!!!
 
 ### I also add some features to my app :
+
 #### 1. If a student is not added to database ( or he enter false username or password) he can not connect to app ![image](https://user-images.githubusercontent.com/75392302/215276205-9d921304-4f93-4012-b915-da91c5e1d78b.png)
 
-#### 2. when the student want to reserve a resouce that is not available at this time a message will be shown.
+#### 2. when the student want to reserve a resource that is not available at this time the reservation will not be accepted and a message will be shown.![image](https://user-images.githubusercontent.com/75392302/215278733-c0cba2bc-4a0a-4166-bd11-ed905a983cfb.png)
 
-#### 1. when the admin accept/refuse a request for a resource an email will send automatically to the student to inform him if he can get access to the resource or not 
+#### 3. when the student want to modify a reservation of a resource that is not available at this time the modification will not be accepted and a message will be shown. ![image](https://user-images.githubusercontent.com/75392302/215278779-bf8f0487-05ae-4f12-b12e-64aa27e1e849.png)
 
-#### 3. 
+#### 4. when the admin accept/refuse a request for a resource an email will send automatically to the student to inform him if he can get access to the resource or not 
+
+#### 5. in term of security if we want to access to a page without login but just by type the path of the page a not found message will be shown ![image](https://user-images.githubusercontent.com/75392302/215279159-0b8066b5-c852-44ea-9bcc-2cf4bc5529e4.png)
+
+### conclusion:
+
+`From a personal point of view`, this project allowed me to develop many skills in web development and familiarize myself a little more with node js I learned a lot, both on the development part web, than on the database part. This experience will be an asset for the pursuit of my studies and for my professional career.
+
+                                                                                                                            
+                                                                  Thank you for your attention!
 
 
 
