@@ -1,7 +1,7 @@
 import Navbar2 from "./navbar2";
 function Admin(){
     return(
-        <div style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
+        <div>
         <Navbar2 />
         
         <div>
