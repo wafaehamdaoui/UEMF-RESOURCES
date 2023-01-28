@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
-import { Button } from "react-bootstrap";
 const Record = (props) => (
  <tr>
    <td>{props.record._id}</td>
@@ -111,8 +109,7 @@ async function rejectRecord(id) {
  // This following section will display the table with the records of individuals.
  return (
    <div>
-     <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Liste des Demandes
-     <NavLink className="navbar-brand" to="/admin"></NavLink>
+     <h3 style={{marginTop:"1.5%" , marginLeft:"37.5%"}}>Liste des Demandes
      </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>

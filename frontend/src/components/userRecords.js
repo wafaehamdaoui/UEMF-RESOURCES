@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
 const Record = (props) => (
@@ -77,8 +76,7 @@ export default function UserRecord() {
  // This following section will display the table with the records of individuals.
  return (
    <div>
-     <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Mes Demandes  
-     <Button href="/student" style={{marginLeft:"55%",backgroundColor:"green"}}>Retourne à l'Acceuil</Button></h3>
+     <h3 style={{marginTop:"1.5%" , marginLeft:"37.5%"}}>Mes Demandes</h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>
