@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
 import { Button } from "react-bootstrap";
 const Record = (props) => (
@@ -112,7 +112,7 @@ async function rejectRecord(id) {
  return (
    <div>
      <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Liste des Demandes
-     <Button style={{marginLeft:"48%", backgroundColor:"green"}} onChange={navigate("/admin")}>Retourne à l'Acceuil</Button>
+     <NavLink className="navbar-brand" to="/admin" style={{marginLeft:"48%"}}></NavLink>
      </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
