@@ -21,7 +21,7 @@ function Home() {
           alt="Second slide"
         />
         
-        <Carousel.Caption>
+        <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
           <h2>UEMF Resources</h2>
           <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
@@ -32,7 +32,7 @@ function Home() {
           src="terr.jpg"
           alt="Third slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
         <h2>UEMF Resources</h2>
           <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
@@ -43,7 +43,7 @@ function Home() {
           src="salle.jpg"
           alt="fourist slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
         <h2>UEMF Resources</h2>
           <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>
@@ -54,7 +54,7 @@ function Home() {
           src="biblio.jpg"
           alt="Five slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
         <h2>UEMF Resources</h2>
           <p style={{fontSize:"15px"}}>Est un système de réservation des ressources d'université</p>
         </Carousel.Caption>

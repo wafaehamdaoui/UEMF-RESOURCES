@@ -4,7 +4,7 @@ function Admin(){
         <div>
         <Navbar2 />
         
-        <div>
+        <div style={{backgroundColor:"rgba(1, 0, 0, 0.4)"}}>
             <h1 style={{marginLeft:"40%",marginTop:"5%"}}>Admin page</h1>
             <img src="amin.png" style={{width:"20%",marginLeft:"40%"}}></img>
         </div>
