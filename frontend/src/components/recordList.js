@@ -112,7 +112,7 @@ async function rejectRecord(id) {
  return (
    <div>
      <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Liste des Demandes
-     <NavLink className="navbar-brand" to="/admin" style={{marginLeft:"10%"}}></NavLink>
+     <NavLink className="navbar-brand" to="/admin"></NavLink>
      </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
