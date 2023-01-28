@@ -175,13 +175,13 @@ recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
     ressource: req.body.ressource,
     duree: req.body.duree,
     date: req.body.date,
-    status: req.body.status,
+    status: "En Attente",
    },
  };
  db_connect
    .collection("demandes")
-   .findOne({_id:{$ne:req.params.id},ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
-     if (demande){
+   .find({ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
+     if (length(demande)>1){
       return response.status(400).json({error:"Modification échouée! essayez avec d'autres durées ou dates "})
      }else{
       db_connect
