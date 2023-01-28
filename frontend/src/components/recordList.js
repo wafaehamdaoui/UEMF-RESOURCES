@@ -78,7 +78,7 @@ export default function RecordList() {
   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/validate/${id}`, {
     method: "POST"
   });
-  window.location.reload(true)
+  window.location.href=window.location.href
   alert("Email sent to !!")
 }
 // This method will reject a record
@@ -86,8 +86,9 @@ async function rejectRecord(id) {
   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/reject/${id}`, {
     method: "POST"
   });
-  window.location.reload(true)
+  //window.location.reload()
   alert("Email sent to !!")
+  window.location.href=window.location.href
   
 }
  // This method will map out the records on the table
