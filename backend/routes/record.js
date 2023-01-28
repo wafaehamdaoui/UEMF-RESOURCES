@@ -185,7 +185,7 @@ recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
  };
  db_connect
    .collection("demandes")
-   .findOne({_id:Id,ressource:(req.body.ressource),duree:(req.body.duree),date:(req.body.date)}, function (err, demande) {
+   .findOne({_id:Id}, function (err, demande) {
      if (demande){
       return response.status(400).json({error:"Modification échouée! essayez avec d'autres durées ou dates "})
      }else{
