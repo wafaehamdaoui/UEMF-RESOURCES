@@ -78,17 +78,18 @@ export default function RecordList() {
   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/validate/${id}`, {
     method: "POST"
   });
-  window.location.reload("/")
-  //alert("Email sent to !!")
-
+  //window.location.reload("/")
+  alert("Email sent to !!")
+  navigate("/admin/record")
 }
 // This method will reject a record
 async function rejectRecord(id) {
   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/reject/${id}`, {
     method: "POST"
   });
-  window.location.reload("/")
-  //alert("Email sent to !!")
+  //window.location.reload()
+  alert("Email sent to !!")
+  navigate("/admin/record")
 }
  // This method will map out the records on the table
  function recordList() {
