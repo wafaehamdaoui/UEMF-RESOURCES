@@ -41,7 +41,8 @@ Our work should achieve the following objectives:
 #### Database:
 IN this project I created two schema or two models :
 
-- *User*: it represent users of my app                      ![image](https://user-images.githubusercontent.com/75392302/215274710-d981f05d-a3d2-412e-8002-f1f046ea873c.png)
+- *User*: it represent users of my app                      
+  ![image](https://user-images.githubusercontent.com/75392302/215274710-d981f05d-a3d2-412e-8002-f1f046ea873c.png)
 
 - There is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
 
