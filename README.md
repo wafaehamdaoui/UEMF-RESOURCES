@@ -139,6 +139,31 @@ By clicking on cancel the request will disappeared from the list and it will be 
 
 * To logout we click on `déconnecter`
 
+### Server/api:
+This part concerns the routing for more details you can see the file server.js 
+
+## `Summary`:
+Currently my application allows me to :
+##### Show list of :(read)
+- Users,
+- Demandes,
+
+#### Add an element in those lists :(create)
+#### Modify an element in requests list by validate or reject a request :(update)
+#### Modify an element in users list  :(update)
+#### Cancel a request :(dalete)
+#### Delete a user :(delete)
+
+So My web application in a CRUD app par excellence!!!
+
+### I also add some features to my app :
+#### 1. If a student is not added to database ( or he enter false username or password) he can not connect to app ![image](https://user-images.githubusercontent.com/75392302/215276205-9d921304-4f93-4012-b915-da91c5e1d78b.png)
+
+#### 2. when the student want to reserve a resouce that is not available at this time a message will be shown.
+
+#### 1. when the admin accept/refuse a request for a resource an email will send automatically to the student to inform him if he can get access to the resource or not 
+
+#### 3. 
 
 
 
