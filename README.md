@@ -40,13 +40,17 @@ Our work should achieve the following objectives:
 
 #### Database:
 IN this project I created two schema or two models :
-- *User*: it represent users of my app ![image](https://user-images.githubusercontent.com/75392302/210186881-839095fb-da44-4296-a163-e37e8001a807.png)
-there is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
-- *Demande*: which represent reservation request that users do.![image](https://user-images.githubusercontent.com/75392302/210186870-e8e26228-3c62-4dc8-b6f0-588ddffed28e.png)
 
+- *User*: it represent users of my app                      
+  ![image](https://user-images.githubusercontent.com/75392302/215274710-d981f05d-a3d2-412e-8002-f1f046ea873c.png)
+
+- There is two types of user, we have setudents whose use app(request for a ressources) and we have admin who manage and control the app  
+
+- *Demande*: which represent reservation request that users do.![image](https://user-images.githubusercontent.com/75392302/215274669-0b944786-8d56-4228-a566-7a5714403e04.png)
 #### User Interface:
 UEMF resources is an application, which will be used by university students most of the time, so the application requires a graphics engine powerful front-end.
 * Login page:![image](https://user-images.githubusercontent.com/75392302/215200517-ff939411-1cf7-4adb-b97f-0f2e5611c1da.png)
+
 User can authenticate with his login and password to take advantage of the application's features.
 This interface allows you to enter:
 - The username
@@ -55,17 +59,22 @@ This interface allows you to enter:
 If the authentication is done correctly, the application opens on the main window.
 
 ### If we log in as a simple user(student):
-* `Principale interface:`![image](https://user-images.githubusercontent.com/75392302/215227276-82a1aeef-39b8-435d-8930-9237c006d49a.png)
-
+* `Principale interface:`![image](https://user-images.githubusercontent.com/75392302/215272221-be49085b-6f32-455c-807d-c19b115ae404.png)
 
 In this interface we find the header (the logo and menu) in the body we find the list of images of resources.
 
-* `Interface demander:` By clicking on Demander, you will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png) if we click on create the server will chek if a request with the same date and duration for the same resource the creation will rejected if not the request will be ceated successfully and we will be redirected to the request list.
+* `Interface demander:` 
+By clicking on Demander, we will be redirected to the request resource page as follows:![image](https://user-images.githubusercontent.com/75392302/215223603-26421103-0f60-402f-9f6d-e9ad70c86cab.png) 
 
-* `Interface liste:` By clicking on Demander, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
+if we click on create the server will chek if a request with the same date and duration for the same resource the creation will rejected if not the request will be ceated successfully and we will be redirected to the request list.
+
+* `Interface Mes Demandes :`
+By clicking on Demandes list, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215224839-71cd4424-62fd-4080-8f21-da8684a1e4b7.png)
+ 
 As we can see we have the rigth to modify or cancel a request.
 
 1. Modify request: 
+
 By clicking on editer, we will be redirected to the request modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215225126-d6fc2bad-ef9f-4acc-a44a-e410f8f96a11.png)
 and if we click on effectuer modification the system will check if a request with the same date and duration for the same resource the modification will rejected if not the modification will be done successfully.
 
@@ -76,7 +85,97 @@ By clicking on cancel the request will disappeared from the list and it will be 
 
 * To logout we click on `déconnecter`
 
+### If we log in as an admin :
 
+* `Principale interface:`
+![image](https://user-images.githubusercontent.com/75392302/215272314-6cd3da00-4b9b-416f-8e3b-b8810cd30545.png)
+
+* `Interface Créer utilisateur:` 
+By clicking on Créer utilisateur, we will be redirected to the adding user page as follows:![image](https://user-images.githubusercontent.com/75392302/215273817-f7370e07-fad6-4eed-b0c4-95113f9e0dad.png)
+
+if we click on create the server will chek if a user with the same information exist in the database, if yes the creation will rejected if not the user will be added successfully and we will be redirected to the users list.
+
+* `Interface Demandes list:` 
+By clicking on Liste Demandes, we will be redirected to the requests list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272379-7ca043aa-2aaa-4b8f-a588-5f788aade0eb.png)
+
+As we can see we have the rigth to Validate or Reject or Deleete a request.
+By defaut status of a request is "En Attente".
+
+1. Validate request: 
+
+By clicking on Valider the status of the request will change and be "Validée":![image](https://user-images.githubusercontent.com/75392302/215272602-c213c9a9-cb40-45cc-b28a-4c188a33381a.png)
+
+and the server will send an email of confirmation to the student has done this request like following :![image](https://user-images.githubusercontent.com/75392302/215272439-73533f7e-66df-4885-b708-824bea85e1a6.png)
+
+![1674915648619](https://user-images.githubusercontent.com/75392302/215274430-d115eb47-15ba-43bd-bf22-e89fee1570a8.jpg)
+![1674915904397](https://user-images.githubusercontent.com/75392302/215274450-99db807e-7f42-48b0-abe9-ef354fb2d9f3.jpg)
+
+2. Reject request: 
+
+By clicking on Rejeter the status of the request will change and be "Rejetée":
+![image](https://user-images.githubusercontent.com/75392302/215274910-57b6dce4-4008-47f7-ae87-145edf2a97e4.png)
+
+and the server will send an email of rejection to the student has done this request like following:                                    
+
+![1674915904397](https://user-images.githubusercontent.com/75392302/215274193-57eb744c-acea-4f42-9782-c59a978e24d9.jpg)
+
+3. Delete request:  
+By clicking on Supprimer the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215272771-458cd6c2-9a0d-4a4f-9b8d-8bd87fde3adc.png)
+
+* `Interface Users list:` 
+By clicking on Liste Utilisateurs, we will be redirected to the users list page as follows:![image](https://user-images.githubusercontent.com/75392302/215272927-67dcd086-6879-4f7f-85b5-1620dfcbdc26.png)
+
+As we can see we have the rigth to Modify or Delete or user.
+
+1. Modiry request: 
+By clicking on editer the status of the request will change and be "Validée":![image](https://user-images.githubusercontent.com/75392302/215272602-c213c9a9-cb40-45cc-b28a-4c188a33381a.png)
+
+1. Modify user: 
+By clicking on editer, we will be redirected to the user modification page as follows:![image](https://user-images.githubusercontent.com/75392302/215273069-7bd9c476-633f-44e8-a16f-c8e64d519972.png)
+
+and if we click on effectuer modification the system will check if a user with the same username or email whit an other id in the database, if yes the modification will rejected if not the modification will be done successfully.
+
+2. Cancel request:  
+By clicking on cancel the request will disappeared from the list and it will be deleted on the database.![image](https://user-images.githubusercontent.com/75392302/215273325-80a88012-68f4-4397-8361-07e50de1f966.png)
+
+* To logout we click on `déconnecter`
+
+### Server/api:
+This part concerns the routing for more details you can see the file server.js 
+
+## `Summary`:
+Currently my application allows me to :
+##### Show list of :(read)
+- Users,
+- Demandes,
+
+#### Add an element in those lists :(create)
+#### Modify an element in requests list by validate or reject a request :(update)
+#### Modify an element in users list  :(update)
+#### Cancel a request :(dalete)
+#### Delete a user :(delete)
+
+So My web application in a CRUD app par excellence!!!
+
+### I also add some features to my app :
+
+#### 1. If a student is not added to database ( or he enter false username or password) he can not connect to app ![image](https://user-images.githubusercontent.com/75392302/215276205-9d921304-4f93-4012-b915-da91c5e1d78b.png)
+
+#### 2. when the student want to reserve a resource that is not available at this time the reservation will not be accepted and a message will be shown.![image](https://user-images.githubusercontent.com/75392302/215278733-c0cba2bc-4a0a-4166-bd11-ed905a983cfb.png)
+
+#### 3. when the student want to modify a reservation of a resource that is not available at this time the modification will not be accepted and a message will be shown. ![image](https://user-images.githubusercontent.com/75392302/215278779-bf8f0487-05ae-4f12-b12e-64aa27e1e849.png)
+
+#### 4. when the admin accept/refuse a request for a resource an email will send automatically to the student to inform him if he can get access to the resource or not 
+
+#### 5. in term of security if we want to access to a page without login but just by type the path of the page a not found message will be shown ![image](https://user-images.githubusercontent.com/75392302/215279159-0b8066b5-c852-44ea-9bcc-2cf4bc5529e4.png)
+
+### conclusion:
+
+This project is part of the integrated project of the 4th year of the engineering cycle. It help students to reserve a ressource just by a click. However, we can still improve this application by adding more functionalities for example we can add a part where a student can create a group to play a football game or basketball... and waiting for other students to join (like what we do in carpooling apps)...
+
+`From a personal point of view`, this project allowed me to develop many skills in web development and familiarize myself a little more with node js I learned a lot, both at backend part and at the frontend part. This experience will be an asset for the pursuit of my studies and for my professional career.
+                                                                                                                            
+                                                                  Thank you for your attention!
 
 
 
