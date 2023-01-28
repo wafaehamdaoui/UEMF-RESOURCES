@@ -46,7 +46,7 @@ export default function Navbar() {
            </li>
            <li className="nav-item ">
              <NavLink className="nav-link" to="/student/record">
-             Liste Demandes
+             Mes Demandes
              </NavLink>
            </li>
            <li className="nav-item ">
