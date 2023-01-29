@@ -76,7 +76,9 @@ export default function UserRecord() {
  // This following section will display the table with the records of individuals.
  return (
    <div>
-     <h3 style={{marginTop:"1.5%" , marginLeft:"37%"}}>Mes Demandes</h3>
+     <h3 style={{marginTop:"1.5%" , marginLeft:"37%"}}>Mes Demandes
+         <Link to={"/student"} style={{marginLeft:"65%",fontSize:"20px"}}>Acceuil </Link>
+     </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>
