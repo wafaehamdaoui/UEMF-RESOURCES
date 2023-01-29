@@ -74,7 +74,7 @@ export default function UserList() {
  return (
    <div>
      <h3 style={{marginTop:"1.5%" , marginLeft:"39%"}}>Liste d'Utilisateurs
-     <Button href="/admin" style={{marginLeft:"50%", backgroundColor:"green"}}>Retourne à l'Acceuil</Button>
+        <Link to={"/admin"} style={{marginLeft:"63%",fontSize:"20px"}}>Acceuil </Link>
      </h3>
     
      <table className="table table-striped" style={{ marginTop: 20 }}>
