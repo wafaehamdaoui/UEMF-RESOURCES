@@ -309,7 +309,7 @@ recordRoutes.route("/updateuser/:id").post(isLoggedIn,function (req, response) {
   };
   db_connect
     .collection("users")
-    .findOne({_id:{$ne:req.params.id},matricul:(req.body.matricul),username:(req.body.username),email:(req.body.email)}, function (err, user) {
+    .findOne({_id:{$ne:ObjectId(req.params.id)},matricul:(req.body.matricul),username:(req.body.username),email:(req.body.email)}, function (err, user) {
       if (user){
         return response.status(400).json({error:"Modification échouée! essayez avec d'autres données "})
       } else{
