@@ -21,7 +21,7 @@ export default function Edit() {
  useEffect(() => {
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`https://uemf-ressource-api-2vgg.onrender.com/record/${params.id.toString()}`);
+     const response = await fetch(`http://localhost:5000/record/${params.id.toString()}`);
  
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
@@ -65,7 +65,7 @@ export default function Edit() {
    };
  
    // This will send a post request to update the data in the database.
-   const res=await fetch(`https://uemf-ressource-api-2vgg.onrender.com/update/${params.id}`, {
+   const res=await fetch(`http://localhost:5000/update/${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedDemande),
      headers: {

@@ -32,7 +32,7 @@ export default function UserRecord() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getRecords() {
-     const response = await fetch(`https://uemf-ressource-api-2vgg.onrender.com/userRecord/`);
+     const response = await fetch(`http://localhost:5000/userRecord/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -52,7 +52,7 @@ export default function UserRecord() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch(`https://uemf-ressource-api-2vgg.onrender.com/${id}`, {
+   await fetch(`http://localhost:5000/${id}`, {
      method: "DELETE"
    });
  

@@ -3,15 +3,20 @@ const jwt = require("jsonwebtoken");
 const mongoose =  require("mongoose");
 const LocalStrategy =  require("passport-local");
 const nodemailer = require('nodemailer');
+
+// first I try to work with models by an error of connection with mongodb appeared 
 //const User =  require("../models/user");
+//const Demande =  require("../models/demande");
+
 // recordRoutes is an instance of the express router.
-// We use it to define our routes.
-// The router will be added as a middleware and will take control of requests starting with path /record.
+// i use it to define my routes.
+// The router will be added as a middleware and will take control of requests.
 const recordRoutes = express.Router();
 
 // This will help us connect to the database
 const dbo = require("../db/conn");
 
+// those attributes I will use them later
 const ObjectId = require("mongodb").ObjectId;
 var current = undefined;
 
@@ -28,14 +33,48 @@ var transporter = nodemailer.createTransport({
   }
   
 });
+// this fnction help me get the current user
+
 function isLoggedIn(req,res,next) {
+  // basically this commande return the current user  
+  // req.session.user
+  // but for me it always return an undefined value so I declare a const and I initialize  it by "undefined"
+  // and in login part I affect to it the user who try to connect 
+  //so to verify if there is someone who is login  I just verify the value of attribute "current"
   if(current){
     return next();
   }else{
     return res.status(401).json('unauthorize')
   }
 }
-// This section will help you get a list of all the records.
+// This is the login section 
+recordRoutes.route("/login").post(function (req, res) {
+  let db_connect = dbo.getDb("demandes");
+  const { username, password } = req.body;
+  db_connect.collection("users").findOne({username:username,password:password}, function (err, result) {
+    if (err) throw err;
+    res.json(result);
+    req.user=result;
+    current=result;
+    req.session.save();
+    console.log("result",result)
+    console.log("req.user",req.user)
+  });
+});
+
+recordRoutes.route("/logout").post(isLoggedIn, async (req, res) => {
+  //basicaly this is the code to destroy a session 
+  //req.session.destroy((error) => {
+    //if (error) throw error
+    //res.clearCookie('session-id') // cleaning the cookies from the user session
+    //res.status(200).send('Logout Success')
+  //})
+
+  //but bacause it doesn't work and  i already use "current" attrubute so all i need is to change its value
+  current = undefined;
+})
+
+// This section will help me get a list of all the records.
 recordRoutes.route("/record").get(isLoggedIn, function (req, res) {
   console.log("req.user from",req.user)
     let db_connect = dbo.getDb("demandes");
@@ -47,6 +86,7 @@ recordRoutes.route("/record").get(isLoggedIn, function (req, res) {
      res.json(result);
    });
 });
+// This section will help me get a list of all the records of  specific user
 recordRoutes.route("/userRecord").get(isLoggedIn, function (req, res) {
   console.log("req.user from",req.user)
     let db_connect = dbo.getDb("demandes");
@@ -69,30 +109,6 @@ recordRoutes.route("/user").get(isLoggedIn,function (req, res) {
       res.json(result);
     });
  });
-
-recordRoutes.route("/login").post(function (req, res) {
-  let db_connect = dbo.getDb("demandes");
-  const { username, password } = req.body;
-  db_connect.collection("users").findOne({username:username,password:password}, function (err, result) {
-    if (err) throw err;
-    res.json(result);
-    req.user=result;
-    current=result;
-    req.session.save();
-    console.log("result",result)
-    console.log("req.user",req.user)
-  });
-});
-
-recordRoutes.route("/logout").post(isLoggedIn, async (req, res) => {
-  current = undefined;
-  //req.session.destroy((error) => {
-    //if (error) throw error
-    //res.clearCookie('session-id') // cleaning the cookies from the user session
-    //res.status(200).send('Logout Success')
-  //})
-})
-
 
 
 // This section will help us get a single record by id
@@ -118,7 +134,7 @@ recordRoutes.route("/user/:id").get(isLoggedIn,function (req, res) {
     });
  });
  
-// This section will help you create a new record.
+// This section will help us create a new record.
 recordRoutes.route("/record/add").post(isLoggedIn,function (req, response) {
  let db_connect = dbo.getDb();
  let myobj = {
@@ -144,7 +160,9 @@ recordRoutes.route("/record/add").post(isLoggedIn,function (req, response) {
 }
 });
 });
- 
+// This section will help us create a new user
+// in the beginning I let this task to the student to register or not but because this app is not public is just for student of university 
+// so I choise to give this task to the administration in order to ensure that all student have an account(like what we have in konosys app) 
 recordRoutes.route("/register").post(isLoggedIn,function (req, response) {
   let db_connect = dbo.getDb();
   let myobj = {
@@ -166,6 +184,7 @@ recordRoutes.route("/register").post(isLoggedIn,function (req, response) {
   }
   });
  });
+
 // This section will help us update a record by id.
 recordRoutes.route("/update/:id").post(isLoggedIn,function (req, response) {
  let db_connect = dbo.getDb();
@@ -305,7 +324,7 @@ recordRoutes.route("/updateuser/:id").post(isLoggedIn,function (req, response) {
     });
  });
  
-// This section will help you delete a record
+// This section will help us delete a record by id
 recordRoutes.route("/:id").delete(isLoggedIn,(req, response) => {
  let db_connect = dbo.getDb();
  let myquery = { _id: ObjectId(req.params.id) };
@@ -316,7 +335,7 @@ recordRoutes.route("/:id").delete(isLoggedIn,(req, response) => {
  });
 });
 
-// This section will help you delete a user
+// This section will help you delete a user by id
 recordRoutes.route("/delete/:id").delete(isLoggedIn,(req, response) => {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId(req.params.id) };
